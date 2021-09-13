@@ -1,0 +1,19 @@
+{
+  "name": "maths-magician",
+  "version": "1.0.0",
+  "description": "Make a simple calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ntwali-Josue/maths-magician.git"
+  },
+  "author": "Karangwa Ntwali Josue",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ntwali-Josue/maths-magician/issues"
+  },
+  "homepage": "https://github.com/Ntwali-Josue/maths-magician#readme"
+}
