@@ -15,3 +15,9 @@
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
 }
+
+.digits-elts {
+  border: 1px solid #dbdbdb;
+  cursor: pointer;
+  padding: 5px;
+}
