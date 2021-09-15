@@ -22,6 +22,10 @@
   padding: 5px;
 }
 
+.digits-elts:hover {
+  background-color: rgb(231, 231, 231);
+}
+
 .operator {
  background-color: #eca95c;
 }
