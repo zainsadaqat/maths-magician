@@ -26,6 +26,10 @@
  background-color: #eca95c;
 }
 
+.operator:hover {
+  background-color: #ce8e46;
+}
+
 .end {
   display: grid;
   grid-template-columns: 50% 25% 25%;
