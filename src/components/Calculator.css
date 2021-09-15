@@ -25,3 +25,8 @@
 .operator {
  background-color: #eca95c;
 }
+
+.end {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+}
