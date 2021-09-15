@@ -4,7 +4,7 @@ import './Calculator.css';
 class Calculator extends React.Component {
   render() {
     return (
-      <div className="container">
+      <section className="container">
         <div className="returnSection">
           0
         </div>
@@ -31,7 +31,7 @@ class Calculator extends React.Component {
           <div className="digits-elts ">.</div>
           <div className="digits-elts operator">=</div>
         </span>
-      </div>
+      </section>
     );
   }
 }
