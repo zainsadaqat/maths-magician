@@ -1,5 +1,7 @@
 import React from 'react';
 import './Calculator.css';
+// import operate from '../logic/operate';
+// import calculate from '../logic/calculate';
 
 class Calculator extends React.Component {
   render() {
@@ -9,27 +11,27 @@ class Calculator extends React.Component {
           0
         </div>
         <div className="digits">
-          <div className="digits-elts">AC</div>
-          <div className="digits-elts">+/-</div>
-          <div className="digits-elts">%</div>
-          <div className="digits-elts operator">÷</div>
-          <div className="digits-elts">7</div>
-          <div className="digits-elts">8</div>
-          <div className="digits-elts">9</div>
-          <div className="digits-elts operator">x</div>
-          <div className="digits-elts">4</div>
-          <div className="digits-elts">5</div>
-          <div className="digits-elts">6</div>
-          <div className="digits-elts operator">-</div>
-          <div className="digits-elts">1</div>
-          <div className="digits-elts">2</div>
-          <div className="digits-elts">3</div>
-          <div className="digits-elts operator">+</div>
+          <button type="button" className="digits-elts">AC</button>
+          <button type="button" className="digits-elts">+/-</button>
+          <button type="button" className="digits-elts">%</button>
+          <button type="button" className="digits-elts operator">÷</button>
+          <button type="button" className="digits-elts">7</button>
+          <button type="button" className="digits-elts">8</button>
+          <button type="button" className="digits-elts">9</button>
+          <button type="button" className="digits-elts operator">x</button>
+          <button type="button" className="digits-elts">4</button>
+          <button type="button" className="digits-elts">5</button>
+          <button type="button" className="digits-elts">6</button>
+          <button type="button" className="digits-elts operator">-</button>
+          <button type="button" className="digits-elts">1</button>
+          <button type="button" className="digits-elts">2</button>
+          <button type="button" className="digits-elts">3</button>
+          <button type="button" className="digits-elts operator">+</button>
         </div>
         <span className="end">
-          <div className="digits-elts">0</div>
-          <div className="digits-elts ">.</div>
-          <div className="digits-elts operator">=</div>
+          <button type="button" className="digits-elts">0</button>
+          <button type="button" className="digits-elts ">.</button>
+          <button type="button" className="digits-elts operator">=</button>
         </span>
       </section>
     );
