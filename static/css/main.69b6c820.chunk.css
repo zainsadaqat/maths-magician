@@ -1,0 +1,2 @@
+body{margin:0;padding:0}.App{text-align:center}.container{width:300px;border:1px;margin:100px}.returnSection{background-color:#8b8b8b;text-align:right;padding:5px;color:#fff}.digits{display:grid;grid-template-columns:25% 25% 25% 25%}.digits-elts{border:1px solid #dbdbdb;cursor:pointer;padding:5px}.digits-elts:hover{background-color:#e7e7e7}.operator{background-color:#eca95c}.operator:hover{background-color:#ce8e46}.end{display:grid;grid-template-columns:50% 25% 25%}
+/*# sourceMappingURL=main.69b6c820.chunk.css.map */
