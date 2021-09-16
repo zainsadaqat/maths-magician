@@ -7,6 +7,7 @@ class Calculator extends React.Component {
   constructor(props) {
     super(props);
     this.calculator = this.calculator.bind(this);
+    this.returnResults = this.returnResults.bind(this);
   }
 
   calculator(obj, button) {
@@ -17,13 +18,31 @@ class Calculator extends React.Component {
     updateState(newObj);
   }
 
+  returnResults() {
+    const { digitObj } = this.props;
+    const { total, next, operation } = digitObj;
+
+    if (total === null && next === null) {
+      return 0;
+    } if (next !== null && total === null) {
+      return next;
+    } if (total !== null && next !== null) {
+      if (operation !== null && operation !== undefined) {
+        console.log(`${total} ${operation} ${next}`);
+        return `${total} ${operation} ${next}`;
+      }
+      return total;
+    }
+    return total;
+  }
+
   render() {
     const { digitObj } = this.props;
 
     return (
       <section className="container">
         <div className="returnSection">
-          0
+          {(this.returnResults())}
         </div>
         <div className="digits">
           <button type="button" className="digits-elts" value="AC" onClick={() => { this.calculator(digitObj, 'AC'); }}>AC</button>
