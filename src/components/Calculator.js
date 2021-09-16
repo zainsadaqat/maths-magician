@@ -8,9 +8,7 @@ class Calculator extends React.Component {
     super(props);
     this.calculator = this.calculator.bind(this);
     this.returnResults = this.returnResults.bind(this);
-    // this.handleClick = this.handleClick.bind(this);
   }
-  // console.log(retun);
 
   calculator(obj, button) {
     const { updateState } = this.props;
@@ -27,7 +25,6 @@ class Calculator extends React.Component {
     if (total === null && next === null) {
       return 0;
     } if (next !== null && total === null) {
-      // console.log('gb');
       return next;
     } if (total !== null && next !== null) {
       if (operation !== null && operation !== undefined) {
@@ -40,11 +37,7 @@ class Calculator extends React.Component {
   }
 
   render() {
-    // const { total, next } = this.state;
-    // const returnResults = () => {
-    // const { operation } = this.state;
     const { digitObj } = this.props;
-    // console.log('ergt', digitObj);
 
     return (
       <section className="container">
@@ -81,7 +74,6 @@ class Calculator extends React.Component {
 
 Calculator.propTypes = {
   updateState: PropTypes.func.isRequired,
-  // eslint-disable-next-line react/forbid-prop-types
   digitObj: PropTypes.object.isRequired,
 };
 
