@@ -25,7 +25,7 @@ class App extends React.Component {
     const { digitObj } = this.state;
     return (
       <div className="App">
-        <Calculator />
+        <Calculator updateState={this.updateState} digitObj={digitObj} />
       </div>
     );
   }
