@@ -16,7 +16,6 @@ class App extends React.Component {
 
   render() {
     const { digitObj } = this.state;
-    console.log(digitObj);
     return (
       <div className="App">
         <Calculator />
