@@ -1,7 +1,13 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #615548;
+}
+
 .container {
   width: 300px;
   border: 1px;
-  margin: 100px;
+  margin: 100px 0;
 }
 
 .returnSection {
