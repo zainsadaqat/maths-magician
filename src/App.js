@@ -12,6 +12,13 @@ class App extends React.Component {
         operation: null,
       },
     };
+    this.updateState = this.updateState.bind(this);
+  }
+
+  updateState(obj) {
+    this.setState({
+      digitObj: obj,
+    });
   }
 
   render() {
