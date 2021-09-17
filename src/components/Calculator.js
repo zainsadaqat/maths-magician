@@ -21,13 +21,13 @@ const Calculator = () => {
     total: null,
     next: null,
     operation: null,
-  })
-  const calculator = (obj, button) => {
-    const { updateState } = this.props;
-    const newObj = calculate(obj, button);
+  });
 
-    this.digitObj = newObj;
-    updateState(newObj);
+  const calculator = (obj, button) => {
+    // const { updateState } = this.props;
+    const newObj = calculate(obj, button);
+    // this.digitObj = newObj;
+    setDigitObj(newObj);
   }
 
   const returnResults = () => {
