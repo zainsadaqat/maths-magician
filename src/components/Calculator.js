@@ -43,8 +43,7 @@ const Calculator = () => {
     return total;
   }
 
-  render() {
-    const { digitObj } = this.props;
+    // const { digitObj } = this.props;
 
     return (
       <section className="container">
@@ -79,9 +78,9 @@ const Calculator = () => {
   }
 }
 
-Calculator.propTypes = {
-  updateState: PropTypes.func.isRequired,
-  digitObj: PropTypes.object.isRequired,
-};
+// Calculator.propTypes = {
+//   updateState: PropTypes.func.isRequired,
+//   digitObj: PropTypes.object.isRequired,
+// };
 
 export default Calculator;
