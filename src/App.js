@@ -6,19 +6,12 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
-    this.updateState = this.updateState.bind(this);
-  }
-
-  updateState(obj) {
-    this.setState({
-      digitObj: obj,
-    });
   }
 
   render() {
     return (
       <div className="App">
-        <Calculator updateState={this.updateState} />
+        <Calculator />
       </div>
     );
   }
