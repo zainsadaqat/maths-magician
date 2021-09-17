@@ -18,7 +18,7 @@ const Calculator = () => {
   //   // };
   // }
 
-  calculator(obj, button) {
+  const calculator = (obj, button) => {
     const { updateState } = this.props;
     const newObj = calculate(obj, button);
 
@@ -26,7 +26,7 @@ const Calculator = () => {
     updateState(newObj);
   }
 
-  returnResults() {
+  const returnResults = () => {
     const { digitObj } = this.props;
     const { total, next, operation } = digitObj;
 
