@@ -4,12 +4,19 @@ import PropTypes from 'prop-types';
 import calculate from '../logic/calculate';
 import './Calculator.css';
 
-class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.calculator = this.calculator.bind(this);
-    this.returnResults = this.returnResults.bind(this);
-  }
+const Calculator = () => {
+  // constructor(props) {
+  //   super(props);
+  //   this.calculator = this.calculator.bind(this);
+  //   this.returnResults = this.returnResults.bind(this);
+  //   // this.state = {
+  //   //   digitObj: {
+  //   //     total: null,
+  //   //     next: null,
+  //   //     operation: null,
+  //   //   },
+  //   // };
+  // }
 
   calculator(obj, button) {
     const { updateState } = this.props;
