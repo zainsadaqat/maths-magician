@@ -5,13 +5,7 @@ import Calculator from './components/Calculator';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      digitObj: {
-        total: null,
-        next: null,
-        operation: null,
-      },
-    };
+    this.state = {};
     this.updateState = this.updateState.bind(this);
   }
 
