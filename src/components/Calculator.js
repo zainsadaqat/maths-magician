@@ -1,5 +1,5 @@
 /* eslint-disable react/forbid-prop-types */
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import calculate from '../logic/calculate';
 import './Calculator.css';
@@ -17,7 +17,11 @@ const Calculator = () => {
   //   //   },
   //   // };
   // }
-
+  const [digitObj, setDigitObj] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  })
   const calculator = (obj, button) => {
     const { updateState } = this.props;
     const newObj = calculate(obj, button);
